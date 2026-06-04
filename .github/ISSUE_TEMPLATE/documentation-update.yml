@@ -1,0 +1,40 @@
+name: Documentation update
+description: Request a new document, runbook, implementation note, or documentation improvement.
+title: "docs: "
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What documentation should be added or improved?
+      placeholder: Describe the missing, outdated, or unclear documentation.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Link the related implementation, deployment, incident, task, or discussion.
+      placeholder: Add links, references, or background information.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this issue to be complete?
+      placeholder: |
+        - The document explains...
+        - The runbook includes...
+        - The links are verified...
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or references
+      description: Add screenshots, logs, diagrams, commands, or external references when available.
+    validations:
+      required: false

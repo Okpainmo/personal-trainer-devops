@@ -1,0 +1,37 @@
+name: Documentation fix
+description: Report inaccurate, stale, broken, or confusing documentation.
+title: "fix: "
+labels:
+  - documentation
+  - bug
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Affected document
+      description: Which file or section needs correction?
+      placeholder: docs/deployments/staging.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is wrong, stale, broken, or confusing?
+      placeholder: Describe the issue clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected correction
+      description: What should the documentation say or link to instead?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add command output, screenshots, links, or references that prove the correction.
+    validations:
+      required: false
