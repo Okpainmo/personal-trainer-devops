@@ -1,6 +1,9 @@
 # node_modules
 node_modules
 
+# local environment / secrets
+.env
+.env.*
+
 # trash
 trash
-

@@ -74,6 +74,7 @@ The system service is named `detrudr`. You can manage it using the following com
   entries._
 
 - **Restart service:**
+
   ```bash
   sudo systemctl restart detrudr
   ```
