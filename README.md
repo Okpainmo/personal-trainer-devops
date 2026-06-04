@@ -66,17 +66,20 @@ very liable to change.
 >
 > If using distributed infra: set "Server Identifier" and "Server IP" to a generic value: E.g."all
 > BE servers", "all DB servers" etc.
+>
+> Server IP is currently kept `<SERVER_IP>` for security reasons. Consult the DevOps team for the
+> actual IP address.
 
-| Port | Server IP     | Server Identifier | Service               |
-| :--- | :------------ | :---------------- | :-------------------- |
-| 22   | 16.170.96.186 | main              | SSH                   |
-| 80   | 16.170.96.186 | main              | Nginx                 |
-| 443  | 16.170.96.186 | main              | Nginx                 |
-| 3001 | 16.170.96.186 | main              | Frontend (Staging)    |
-| 3002 | 16.170.96.186 | main              | Frontend (Production) |
-| 4001 | 16.170.96.186 | main              | Backend (Staging)     |
-| 4002 | 16.170.96.186 | main              | Backend (Production)  |
-| 5432 | 16.170.96.186 | main              | PostgreSQL            |
-| 6379 | 16.170.96.186 | main              | Redis                 |
-| 8080 | 16.170.96.186 | main              | FitCall               |
-| 8090 | 16.170.96.186 | main              | Detrudr               |
+| Port | Server IP   | Server Identifier | Service               |
+| :--- | :---------- | :---------------- | :-------------------- |
+| 22   | <SERVER_IP> | main              | SSH                   |
+| 80   | <SERVER_IP> | main              | Nginx                 |
+| 443  | <SERVER_IP> | main              | Nginx                 |
+| 3001 | <SERVER_IP> | main              | Frontend (Staging)    |
+| 3002 | <SERVER_IP> | main              | Frontend (Production) |
+| 4001 | <SERVER_IP> | main              | Backend (Staging)     |
+| 4002 | <SERVER_IP> | main              | Backend (Production)  |
+| 5432 | <SERVER_IP> | main              | PostgreSQL            |
+| 6379 | <SERVER_IP> | main              | Redis                 |
+| 8080 | <SERVER_IP> | main              | FitCall               |
+| 8090 | <SERVER_IP> | main              | Detrudr               |
