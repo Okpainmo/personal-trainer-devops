@@ -35,8 +35,8 @@ The deployment on the FitCall project server serves three primary functions:
 
 The daemon runs on port `8090` and is deployed behind Nginx.
 
-- **Admin Access:** All requests made to the server's base IP (`http://16.170.96.186`) are proxied
-  to the Detrudr daemon on port `8090` for administrative access and monitoring.
+- **Admin Access:** All requests made to the server's base IP (`<SERVER_IP>`) are proxied to the
+  Detrudr daemon on port `8090` for administrative access and monitoring.
 - **Nginx Config:** A dedicated virtual host configuration named `detrudr` handles the proxying.
 
 ## Nginx configuration
