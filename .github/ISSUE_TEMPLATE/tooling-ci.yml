@@ -1,0 +1,35 @@
+name: Tooling or CI change
+description: Request changes to repository automation, hooks, formatting, or checks.
+title: "chore: "
+labels:
+  - tooling
+  - ci
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What tooling or CI behavior should change?
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Why is this change needed?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed implementation
+      description: Describe the expected workflow, command, hook, or CI behavior.
+    validations:
+      required: false
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: How should reviewers confirm the change works?
+    validations:
+      required: false
